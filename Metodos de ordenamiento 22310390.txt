@@ -1,0 +1,43 @@
+"Estructuras de datos y algoritmica"
+Profe:Victor Manuel Navarro Bustos
+Alumno: Jonathan Salvador Fonseca Guardado
+Registro: 22310390
+
+° METODOS DE ORDENAMIENTO °
+
+° Ordenamiento de Burbuja (Bubble Sort):
+Este algoritmo compara repetidamente cada par de elementos adyacentes y los intercambia si están en el orden incorrecto.
+La lista se recorre varias veces hasta que no haya intercambios pendientes, lo que indica que la lista está ordenada.
+Es fácil de implementar, pero no es eficiente para grandes conjuntos de datos debido a su complejidad cuadrática (O(n^2)) en el peor caso.
+
+° Ordenamiento por Inserción (Insertion Sort):
+Este algoritmo construye la lista ordenada uno a uno, tomando cada elemento de la lista y colocándolo en su posición correcta.
+Comienza con una lista de un solo elemento y se va expandiendo, insertando cada nuevo elemento en su lugar adecuado.
+Es eficiente para listas pequeñas, pero también tiene una complejidad cuadrática (O(n^2)) en el peor caso.
+
+° Ordenamiento por Selección (Selection Sort):
+En este algoritmo, se divide la lista en dos partes: la parte ordenada y la parte no ordenada. En cada iteración, se selecciona el elemento más pequeño de la parte no ordenada y se intercambia con el primer elemento de la parte no ordenada.
+Es simple de implementar, pero también tiene una complejidad cuadrática (O(n^2)) en el peor caso.
+
+° Ordenamiento por Fusión (Merge Sort):
+Este algoritmo sigue el enfoque de "divide y conquista". Divide repetidamente la lista en mitades hasta que cada sublista contenga un solo elemento, luego combina las sublistas de manera ordenada.
+Es eficiente y tiene una complejidad de tiempo de O(n log n), lo que lo hace adecuado para listas grandes.
+
+° Ordenamiento Rápido (Quick Sort):
+Al igual que el Merge Sort, el Quick Sort también sigue el enfoque de "divide y conquista". Selecciona un elemento pivote y reorganiza la lista de manera que los elementos menores que el pivote estén a su izquierda y los mayores estén a su derecha. Luego, el algoritmo se aplica recursivamente a las sublistas a cada lado del pivote.
+En promedio, tiene una complejidad de tiempo de O(n log n), pero en el peor caso puede degradarse a O(n^2), aunque esto es raro en la práctica.
+
+° Ordenamiento por Sacudida (Cocktail Sort):
+También conocido como "Bidirectional Bubble Sort", es una variante del Bubble Sort que avanza y retrocede a lo largo de la lista, intercambiando elementos adyacentes si están en el orden incorrecto.
+Este enfoque puede ser más eficiente que el Bubble Sort tradicional en ciertos casos, ya que puede evitar el recorrido completo de la lista si está casi ordenada.
+
+° Ordenamiento por Shell (Shell Sort):
+Es una extensión del método de inserción que divide la lista en subgrupos más pequeños y luego aplica el método de inserción en cada subgrupo.
+Utiliza un intervalo de brecha que se va reduciendo gradualmente en cada iteración hasta que el intervalo de brecha alcanza 1, momento en el que el algoritmo se comporta como un simple ordenamiento por inserción.
+Aunque no es tan eficiente como Merge Sort o Quick Sort en la mayoría de los casos, puede ser más rápido que los métodos de ordenamiento cuadráticos en ciertos contextos.
+
+° Ordenamiento por Radix (Radix Sort):
+Este método ordena los elementos comparando sus dígitos en lugar de comparar los valores completos de los elementos.
+Es especialmente útil para ordenar enteros o cadenas de caracteres que representan números, ya que puede realizar el ordenamiento en tiempo lineal.
+Radix Sort puede ser más eficiente que otros algoritmos de comparación cuando el rango de valores a ordenar es conocido y relativamente pequeño en comparación con el número total de elementos.
+
